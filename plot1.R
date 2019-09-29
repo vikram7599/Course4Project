@@ -10,7 +10,7 @@ if(!exists("SCC")){
 # for each of the years 1999, 2002, 2005, and 2008.
 
 aggregatedTotalByYear <- aggregate(Emissions ~ year, NEI, sum)
-
+print("This is just ot see the change")
 png('plot1.png')
 barplot(height=aggregatedTotalByYear$Emissions, names.arg=aggregatedTotalByYear$year, xlab="years", ylab=expression('total PM'[2.5]*' emission'),main=expression('Total PM'[2.5]*' emissions at various years'))
 dev.off()
